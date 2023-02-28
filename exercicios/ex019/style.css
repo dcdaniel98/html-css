@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    font: normal 1em normal Arial Verdana sans-serif;
+    background-color: rgb(208, 196, 211);
+}
+
+h1 {
+    font: bold 2.3em normal Verdana sans-serif;
+    
+}
+
+#titulo {
+    background-color:orangered ;
+    color: white;
+    font: bolder 2.3em normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+
+}
+
+p {
+    text-align: justify;
+}
+
+
+.basico {
+    color: rgb(93, 149, 93);
+}
+
+.inter {
+    color: rgb(159, 159, 71);
+}
+
+.avanc {
+    color: rgb(219, 113, 113);
+}
+
+.especial {
+    background-color: rgba(202, 179, 136, 0.673);
+}
