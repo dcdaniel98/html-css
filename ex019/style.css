@@ -1,0 +1,36 @@
+@charset "UTF8";
+
+body {
+    font: normal 13px arial, sans-serif;
+    background-image: linear-gradient(to bottom,  #BDD9F2, #84A9BF);
+    background-attachment: fixed;
+}
+
+h1 {
+    color:#378C8C;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+h1#principal {
+    background-color: #166273;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.795);
+}
+
+.basc {
+    color: rgb(53, 129, 53);
+}
+
+.inter {
+    color: rgb(154, 154, 63);
+}
+
+.avan {
+    color: rgb(126, 47, 47);
+}

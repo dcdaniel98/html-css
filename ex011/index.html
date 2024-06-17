@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam a tela</h1>
+    <p>Diminua e aumente o tamanho do navegador para ver a imagem mudando</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="imagem-grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir </p>
+        <!-- Forma simples:
+        <audio src="audio/Oh Fire - Carmen María and Edu Espinal.mp3" autoplay controls></audio>-->
+
+        <audio preload="metadata" autoplay controls loop>
+            <source src="audio/Oh Fire - Carmen María and Edu Espinal.mp3" type="audio/mpeg">
+
+            <source src="audio/Oh Fire - Carmen María and Edu Espinal.ogg" type="audio/ogg">
+
+            <source src="audio/Oh Fire - Carmen María and Edu Espinal.wav" type="audio/wav">
+
+            <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="audio/Oh Fire - Carmen María and Edu Espinal.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        </audio>
+
+
+    
+
+</body>
+</html>
