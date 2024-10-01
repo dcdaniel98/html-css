@@ -13,11 +13,34 @@
         table {
             width: 500px; 
             border-collapse: collapse; 
+            position: relative;
+        }
+
+        caption {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px 0px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;            
+        }
+
+        tbody tr:nth-child(even) { /*even=par odd=impar 2n= de 2 em 2 2n-1= começar na 1º */
+            background-color: lightgray;
         }
 
         th, td {
             border: 1px solid black;
             padding: 5px;
+        }
+
+        td.num {
+            text-align: right;
         }
 
         thead, tfoot {
@@ -31,35 +54,70 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
            <tr>
-               <th>Estado</th>
-               <th>População</th>
+               <th scope="col">Estado</th>
+               <th scope="col" style="width: 70px;">População</th>
            </tr>
         </thead>
 
         <tbody>
+
             <tr>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td class="num">44 411 238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 538 718</td>
+                <td class="num">20 538 718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524</td>
+                <td class="num">16 054 524</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+
         </tbody>
         
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>00000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>152,882,759</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit?</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit?</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem ab accusantium, cupiditate culpa, enim voluptate beatae facilis error deserunt eum repellat distinctio inventore repudiandae eaque mollitia, consequuntur odit reprehenderit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error nobis quia autem voluptatibus id voluptate impedit earum assumenda illo eius odio perspiciatis, quasi debitis excepturi inventore enim quisquam, unde obcaecati alias possimus? Accusamus, fugit! Asperiores ad eaque magni quas suscipit illo amet. Dolorum assumenda sint magni ab repellendus blanditiis, doloribus molestias reprehenderit provident laboriosam. Et dolorem iusto vitae alias maxime quae odit repudiandae enim magni nulla at corporis id deleniti iste animi tenetur necessitatibus ipsum voluptatibus quibusdam accusantium labore quisquam, sint similique! Quisquam hic ducimus tenetur. Dolorum, qui? Maiores reprehenderit non quo facilis expedita libero deleniti eligendi recusandae animi! ipsum dolor sit amet, consectetur adipisicing elit. Laudantium libero debitis excepturi temporibus culpa id possimus at? Labore recusandae, ea officia mollitia fuga aliquid ipsam quis quia quidem maxime. Hic?</p>
 
 </body>
 </html>
